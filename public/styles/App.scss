@@ -1,0 +1,318 @@
+/* -- Imports -- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Roboto&display=swap");
+
+/* -- Variables -- */
+$debugapp-font-family: "Poppins", sans-serif;
+$content-font-family: "Roboto", sans-serif;
+$purple-color: hsl(284, 100%, 31%);
+$dark-purple-color: hsl(284, 100%, 25%);
+$gray-color: hsl(0, 0%, 95%);
+$white-color: hsl(0, 0%, 100%);
+$black-color: hsla(0, 0%, 0%, 0.9);
+$light-black-color: hsla(0, 0%, 0%, 0.75);
+
+/* -- Mobile and General design -- */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.App {
+  &__icon-exit {
+    width: 2.5em;
+    height: 3.5em;
+
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  & .header {
+    background-color: $purple-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0em 1em;
+
+    &__icon {
+      width: 1em;
+      height: 2em;
+    }
+    &__title {
+      font-family: $debugapp-font-family;
+      color: $white-color;
+      text-align: center;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5em;
+    }
+    &__name {
+      font-family: $content-font-family;
+      font-weight: 400;
+      margin: -0.3em;
+    }
+  }
+  & .main {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1em;
+
+    &__form {
+      width: 22em;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      padding: 1em;
+
+      .form-title {
+        color: $purple-color;
+      }
+      &__title {
+        font-size: 1.5em;
+        color: $purple-color;
+      }
+      .form-register__input {
+        width: 80%;
+        text-indent: 1em;
+        border-radius: 10px;
+        height: 2em;
+        color: $dark-purple-color;
+        outline: none;
+        border: 1px solid $dark-purple-color;
+        transition: 300ms;
+
+        &:hover {
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+        }
+      }
+      .form-login__input {
+        width: 80%;
+        text-indent: 1em;
+        border-radius: 10px;
+        height: 2em;
+        color: $dark-purple-color;
+        outline: none;
+        border: 1px solid $dark-purple-color;
+        transition: 300ms;
+
+        &:hover {
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+        }
+      }
+      .form-register__submit {
+        padding: 0.8em;
+        margin-top: 1em;
+        border-radius: 1em;
+        border: none;
+        width: 10em;
+        background-color: $purple-color;
+        color: $white-color;
+        transition: 300ms;
+        cursor: pointer;
+        margin-left: 6em;
+        text-align: center;
+        font-weight: bold;
+
+        &:hover {
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+        }
+      }
+      .form-login__submit {
+        padding: 0.8em;
+        margin-top: 1em;
+        border-radius: 1em;
+        border: none;
+        width: 10em;
+        background-color: $purple-color;
+        color: $white-color;
+        font-weight: bold;
+        transition: 300ms;
+        cursor: pointer;
+        margin-left: 7em;
+        text-align: center;
+
+        &:hover {
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  & .form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 1.5em;
+
+    &__title {
+      width: 20em;
+      height: 2em;
+      padding: 0.5em;
+      background-color: $gray-color;
+      border: 0.2em solid $purple-color;
+      border-radius: 0.5em 0.5em 0.5em 0.5em;
+      text-indent: 1em;
+      color: $black-color;
+      font-weight: 700;
+      outline: none;
+    }
+    &__content {
+      width: 20em;
+      height: 5em;
+      padding: 0.5em;
+      background-color: $gray-color;
+      border: 0.2em solid $purple-color;
+      border-top: none;
+      border-radius: 0em 0em 0.5em 0.5em;
+      text-indent: 1em;
+      color: $light-black-color;
+      margin-top: -0.1em;
+      resize: none;
+      outline: none;
+      box-shadow: 0px 19px 15px 5px rgba(0, 0, 0, 0.15);
+    }
+    &__button {
+      margin-left: 17.8em;
+      margin-top: -2.6em;
+      border-radius: 0.3em;
+      width: 2.5em;
+      height: 1em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $purple-color;
+      position: relative;
+
+      &:hover {
+        background-color: $dark-purple-color;
+      }
+      & .button__icon {
+        font-size: 2em;
+        color: $white-color;
+        position: absolute;
+      }
+    }
+  }
+  & .section-notes {
+    margin-top: 2em;
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+
+    & .note {
+      background-color: $white-color;
+      min-width: 4em;
+      width: fit-content;
+      min-height: 4em;
+      position: relative;
+      padding: 1em;
+      border-radius: 0.5em;
+      border: 0.1em solid $purple-color;
+      box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+      transition: 300ms;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.4);
+      }
+
+      &__icon {
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        width: 1em;
+        height: 1.5em;
+      }
+      &__title {
+        max-width: 100%;
+        padding: 0.5em;
+        font-size: 0.8em;
+        color: $black-color;
+      }
+      &__content {
+        width: 100%;
+        font-size: 1em;
+        padding: 0.5em;
+        color: $light-black-color;
+      }
+      &__delete {
+        border-radius: 0.3em;
+        width: 2.5em;
+        height: 0.8em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $purple-color;
+        position: absolute;
+        right: -0.1em;
+        bottom: -0.15em;
+
+        &:hover {
+          background-color: $dark-purple-color;
+        }
+        .MuiSvgIcon-root {
+          // delete-button icon
+          padding: 20%;
+          font-size: 1.5em;
+          color: $white-color;
+        }
+      }
+    }
+    .background-popup {
+      position: fixed;
+      z-index: 2;
+      top: 0%;
+      width: 100%;
+      min-height: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      & .popup-box {
+        background-color: $white-color;
+        padding: 2em;
+        margin: 3em 1em;
+        width: fit-content;
+        max-width: 60%;
+        position: relative;
+        word-wrap: break-word;
+        border-radius: 0.5em;
+        border: 0.1em solid $purple-color;
+        box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+
+        &__title {
+          width: 100%;
+          font-size: 1.2em;
+        }
+        &__content {
+          width: 100%;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

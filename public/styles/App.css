@@ -1,0 +1,411 @@
+/* -- Imports -- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Roboto&display=swap");
+/* -- Variables -- */
+/* -- Mobile and General design -- */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App__icon-exit {
+  width: 2.5em;
+  height: 3.5em;
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+}
+
+.App__icon-exit:hover {
+  cursor: pointer;
+}
+
+.App .header {
+  background-color: #74009e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+  padding: 0em 1em;
+}
+
+.App .header__icon {
+  width: 1em;
+  height: 2em;
+}
+
+.App .header__title {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+}
+
+.App .header__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: -0.3em;
+}
+
+.App .main {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1em;
+}
+
+.App .main__form {
+  width: 22em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.App .main__form .form-title {
+  color: #74009e;
+}
+
+.App .main__form__title {
+  font-size: 1.5em;
+  color: #74009e;
+}
+
+.App .main__form .form-register__input {
+  width: 80%;
+  text-indent: 1em;
+  border-radius: 10px;
+  height: 2em;
+  color: #5e0080;
+  outline: none;
+  border: 1px solid #5e0080;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.App .main__form .form-register__input:hover {
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.App .main__form .form-login__input {
+  width: 80%;
+  text-indent: 1em;
+  border-radius: 10px;
+  height: 2em;
+  color: #5e0080;
+  outline: none;
+  border: 1px solid #5e0080;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.App .main__form .form-login__input:hover {
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.1);
+}
+
+.App .main__form .form-register__submit {
+  padding: 0.8em;
+  margin-top: 1em;
+  border-radius: 1em;
+  border: none;
+  width: 10em;
+  background-color: #74009e;
+  color: white;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+  margin-left: 6em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.App .main__form .form-register__submit:hover {
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App .main__form .form-login__submit {
+  padding: 0.8em;
+  margin-top: 1em;
+  border-radius: 1em;
+  border: none;
+  width: 10em;
+  background-color: #74009e;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  cursor: pointer;
+  margin-left: 7em;
+  text-align: center;
+}
+
+.App .main__form .form-login__submit:hover {
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 1.5em;
+}
+
+.App .form__title {
+  width: 20em;
+  height: 2em;
+  padding: 0.5em;
+  background-color: #f2f2f2;
+  border: 0.2em solid #74009e;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+  text-indent: 1em;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 700;
+  outline: none;
+}
+
+.App .form__content {
+  width: 20em;
+  height: 5em;
+  padding: 0.5em;
+  background-color: #f2f2f2;
+  border: 0.2em solid #74009e;
+  border-top: none;
+  border-radius: 0em 0em 0.5em 0.5em;
+  text-indent: 1em;
+  color: rgba(0, 0, 0, 0.75);
+  margin-top: -0.1em;
+  resize: none;
+  outline: none;
+  -webkit-box-shadow: 0px 19px 15px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 19px 15px 5px rgba(0, 0, 0, 0.15);
+}
+
+.App .form__button {
+  margin-left: 17.8em;
+  margin-top: -2.6em;
+  border-radius: 0.3em;
+  width: 2.5em;
+  height: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #74009e;
+  position: relative;
+}
+
+.App .form__button:hover {
+  background-color: #5e0080;
+}
+
+.App .form__button .button__icon {
+  font-size: 2em;
+  color: white;
+  position: absolute;
+}
+
+.App .section-notes {
+  margin-top: 2em;
+  padding: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .section-notes .note {
+  background-color: white;
+  min-width: 4em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 4em;
+  position: relative;
+  padding: 1em;
+  border-radius: 0.5em;
+  border: 0.1em solid #74009e;
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.App .section-notes .note:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+.App .section-notes .note__icon {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  width: 1em;
+  height: 1.5em;
+}
+
+.App .section-notes .note__title {
+  max-width: 100%;
+  padding: 0.5em;
+  font-size: 0.8em;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.App .section-notes .note__content {
+  width: 100%;
+  font-size: 1em;
+  padding: 0.5em;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.App .section-notes .note__delete {
+  border-radius: 0.3em;
+  width: 2.5em;
+  height: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #74009e;
+  position: absolute;
+  right: -0.1em;
+  bottom: -0.15em;
+}
+
+.App .section-notes .note__delete:hover {
+  background-color: #5e0080;
+}
+
+.App .section-notes .note__delete .MuiSvgIcon-root {
+  padding: 20%;
+  font-size: 1.5em;
+  color: white;
+}
+
+.App .section-notes .background-popup {
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .section-notes .background-popup .popup-box {
+  background-color: white;
+  padding: 2em;
+  margin: 3em 1em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 60%;
+  position: relative;
+  word-wrap: break-word;
+  border-radius: 0.5em;
+  border: 0.1em solid #74009e;
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.App .section-notes .background-popup .popup-box__title {
+  width: 100%;
+  font-size: 1.2em;
+}
+
+.App .section-notes .background-popup .popup-box__content {
+  width: 100%;
+  font-size: 1em;
+}
+/*# sourceMappingURL=App.css.map */
