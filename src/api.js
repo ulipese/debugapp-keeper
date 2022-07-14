@@ -4,7 +4,7 @@ dotenv.config();
 
 const callApi = (path, token) => {
   return axios.create({
-    baseURL: `${process.env.URL_API}/${path}`,
+    baseURL: `https://debugapp-keeper-api.herokuapp.com/${path}`,
     headers: {
       "content-type": "application/json",
       "x-access-token": `${token}`,
