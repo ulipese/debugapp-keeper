@@ -64,11 +64,13 @@ body {
     }
   }
   & .main {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: max-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    gap: 2em;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1em;

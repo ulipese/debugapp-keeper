@@ -53,7 +53,13 @@ const Note = (props) => {
         }}
         title="Delete"
       >
-        <DeleteIcon className="delete__icon" title="Delete" />
+        <DeleteIcon
+          className="delete__icon"
+          title="Delete"
+          onClick={() => {
+            deleteNote(props.id);
+          }}
+        />
       </Fab>
     </div>
   );

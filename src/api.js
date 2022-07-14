@@ -1,7 +1,6 @@
+import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
-
-import axios from "axios";
 
 const callApi = (path, token) => {
   return axios.create({

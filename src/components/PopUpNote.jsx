@@ -22,7 +22,10 @@ const PopUpNote = (props) => {
         <h2 className="popup-box__title">{props.popup.title}</h2>
         <p className="popup-box__content">{props.popup.content}</p>
         <Fab className="note__delete" onClick={handleClick}>
-          <DeleteIcon className="delete__icon" />
+          <DeleteIcon
+            className="delete__icon"
+            onClick={handleClick}
+          />
         </Fab>
       </div>
     </section>

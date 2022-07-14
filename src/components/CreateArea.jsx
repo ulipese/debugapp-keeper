@@ -31,23 +31,19 @@ const CreateArea = (props) => {
       event.target.style.borderRadius = "0.5em 0.5em 0em 0em";
       isFocus(true);
     }
-    if (
-      id === "addButton" ||
-      className === "form" ||
-      className === "form__button"
-    ) {
+    if (id === "addButton") {
       const titleInput = document.querySelector(".form__title");
       const contentInput = document.querySelector(".form__content");
 
-      if (titleInput.value.length <= 5) {
+      if (titleInput.value.length <= 3) {
         titleInput.focus();
       }
-      if (contentInput.value.length <= 5) {
+      if (contentInput.value.length <= 3) {
         contentInput.focus();
       }
       if (
-        titleInput.value.length > 5 &&
-        contentInput.value.length > 5
+        titleInput.value.length > 3 &&
+        contentInput.value.length > 3
       ) {
         const token = localStorage.getItem("token");
 
@@ -88,19 +84,23 @@ const CreateArea = (props) => {
       )}
       <Zoom
         in={focus}
-        onClick={handleClick}
         className="form__button"
         title="Create"
+        id="addButton"
+        onClick={handleClick}
       >
         <Fab
           className="form__button"
           disabled={!focus}
           title="Create"
+          id="addButton"
+          onClick={handleClick}
         >
           <AddIcon
             className="button__icon"
             id="addButton"
             title="Create"
+            onClick={handleClick}
           />
         </Fab>
       </Zoom>
