@@ -18,11 +18,13 @@
 
 - React
 - Sass
+- Nodenp
+- MongoDB (mongoose)
 - BEM arch (HTML)
 
 ### What I learned
 
-I learned more about React concepts and creating an application with it.
+I learned more about React concepts and creating an application with it. 
 
 ## Author
 
