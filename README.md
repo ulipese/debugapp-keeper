@@ -18,7 +18,7 @@
 
 - React
 - Sass
-- Nodenp
+- Node
 - MongoDB (mongoose)
 - BEM arch (HTML)
 
