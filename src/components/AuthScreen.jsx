@@ -77,7 +77,7 @@ const AuthScreen = (props) => {
             password: loginValue.password,
           });
           const { token } = data;
-          console.log(token);
+
           if (token) {
             localStorage.setItem("token", token);
             window.location.reload(false); // reload page
