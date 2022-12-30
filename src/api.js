@@ -7,7 +7,7 @@ const callApi = (path, token) => {
     baseURL: `${API_URL}/${path}`,
     headers: {
       "content-type": "application/json",
-      "x-access-token": `${token}`,
+      "x-access-token": `${token}`
     },
   });
 };
