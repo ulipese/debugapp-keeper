@@ -2,6 +2,7 @@
 
 ## Table of contents
 - [Overview](#overview)
+  - [Design](https://www.figma.com/file/U66UhE1pqy1MJ26vB0MGnp/DebugApp-Keeper?type=design&node-id=0%3A1&t=Ovsh6a7Ugcqtyc9J-1) 
   - [Demo](#demo)
 - [About App](#my-process)
   - [Built with](#built-with)
