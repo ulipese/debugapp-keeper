@@ -7,7 +7,7 @@ const Note = (props) => {
   const token = localStorage.getItem("token");
 
   const deleteNote = async (id) => {
-    callApi("deleteNote", token).post("", { noteId: id });
+    callApi("notes/deleteNote", token).post("", { noteId: id });
 
     props.setNotes([]);
   };

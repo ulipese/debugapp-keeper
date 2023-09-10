@@ -30,7 +30,7 @@ function App() {
   };
   const getNotes = async () => {
     const token = localStorage.getItem("token");
-    const { data } = await callApi("getNotes", token).get();
+    const { data } = await callApi("notes", token).get();
     setDisplayNotes([...data]); // data === database notes
   };
 
@@ -54,7 +54,7 @@ function App() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    callApi("getNotes", token)
+    callApi("notes", token)
       .get()
       .then((res) => {
         setDisplayNotes([...res.data]);

@@ -53,7 +53,7 @@ const AuthScreen = (props) => {
         registerValue.password === registerValue.repeatPassword
       ) {
         try {
-          const { data } = await callApi("register").post("", {
+          const { data } = await callApi("users/register").post("", {
             email: registerValue.email,
             password: registerValue.password,
           });
@@ -72,7 +72,7 @@ const AuthScreen = (props) => {
     if (event.target.className === "form-login__submit") {
       if (loginValue.email && loginValue.password) {
         try {
-          const { data } = await callApi("login").post("", {
+          const { data } = await callApi("users/login").post("", {
             email: loginValue.email,
             password: loginValue.password,
           });

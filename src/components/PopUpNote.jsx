@@ -6,7 +6,7 @@ import callApi from "../api";
 const PopUpNote = (props) => {
   const deleteNote = async (id) => {
     const token = localStorage.getItem("token");
-    callApi("deleteNote", token).post("", { noteId: id });
+    callApi("notes/deleteNote", token).post("", { noteId: id });
 
     props.setNotes([]);
   };

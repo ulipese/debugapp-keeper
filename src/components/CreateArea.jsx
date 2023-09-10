@@ -47,7 +47,7 @@ const CreateArea = (props) => {
       ) {
         const token = localStorage.getItem("token");
 
-        callApi("saveNotes", token).post("", newNote);
+        callApi("notes/saveNote", token).post("", newNote);
 
         props.setNotes(newNote);
 
