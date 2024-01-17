@@ -4,6 +4,7 @@
 - [Overview](#overview)
   - [Design](#design) 
   - [Demo](#demo)
+  - [See the Wiki documentation](https://github.com/ulipese/debugapp-keeper/wiki)
 - [About App](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
